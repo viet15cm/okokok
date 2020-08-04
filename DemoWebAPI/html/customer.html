@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/pages/customer.css" rel="stylesheet" />
+
+    <script src="../contents/fontawesome-free-5.13.1-web/js/all.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <h3><b><i class="fas fa-bars"></i></b>&ensp;WelCome</h3>
+            </div>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="customer.html"><i class="fas fa-monument"></i>&ensp;Khách hàng</a></li>
+                    <li><a href="employee.html"><i class="fas fa-female"></i>&ensp;Nhân viên</a></li>
+                    <li><a><i class="fab fa-product-hunt"></i>&ensp;Sản phẩm</a></li>
+                    <li><a><i class="fas fa-warehouse"></i>&ensp;Kho</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <p><i class="fas fa-user"></i></p>
+                    <p>Nguyễn Quốc Việt</p>
+                    <p><i class="fas fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="page-title">
+                    <p><i color="black" class="fab fa-affiliatetheme"></i>&ensp;Danh Mục&ensp;<i class="fas fa-arrow-alt-circle-right"></i></p>
+                    <p>Khách Hàng</p>
+                </div>
+
+                <div class="menu-option">
+                    <p><button id="btnAdd"><i class="far fa-edit"></i>&ensp;Thêm</button></p>
+                    <p><button id="btnDelete"><i class="fas fa-trash-alt"></i>&ensp;Xóa</button></p>
+                    <p><button id="btnEdit"><i class="fas fa-tools"></i>&ensp;Sửa</button></p>
+                </div>
+                <div class="grid">
+                    <table class="tbCustomer" border="1" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td>Mã Khách Hàng</td>
+                                <td>Tên Khách Hàng</td>
+                                <td>Email</td>
+                                <td>Số Điện Thoại</td>
+                                <td>Công Ty</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid-content">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+
+        <div class="dialog-modal">
+        </div>
+        <div class="dialog">
+            <div class="dialog-tittle">
+                <div class="tittle-text">Thong Tin Nhan Vien </div>
+                <div class="tittle-button-close">
+                    <i style="color : white " class="far fa-window-close"></i>
+                </div>
+            </div>
+            <div class="dialog-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>Mã Nhân Viên (*):</label>
+                            </td>
+                            <td>
+                                <input id="txtCode" class="required" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Tên Nhân Viên (*):</label>
+                            </td>
+                            <td>
+                                <input id="txtName" class="required" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email :</label>
+                            </td>
+                            <td>
+                                <input id="txtEmail" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Số Điện Thoại :</label>
+                            </td>
+                            <td>
+                                <input id="txtPhone" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Công Ty :</label>
+                            </td>
+                            <td>
+                                <input id="txtConpany" type="text" />
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dialog-option">
+                <div class="dialog-option-button">
+                    <button id="btnSave">Luu</button>
+                    <button id="btnCancle">Thoat</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <script src="../js/customer.js"></script>
+
+</body>
+</html>
